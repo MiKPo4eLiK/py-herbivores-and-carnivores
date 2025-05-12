@@ -5,6 +5,7 @@ class Animal:
         self.name = name
         self.health = health
         self.hidden = hidden
+        Animal.alive.append(self)
 
     def check_health(self) -> None:
         if self.health <= 0:
